@@ -1,0 +1,104 @@
+@import '../../sass/colors';
+
+.sloganResult__container {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    h2 {
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.25rem;
+      color: $gray;
+      line-height: 28px;
+    }
+
+    button {
+      background-color: transparent;
+      border: 1px solid $primary;
+      border-radius: 4px;
+      color: $primary;
+      padding: 0.5rem 1rem;
+      font-size: 1.125rem;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    .slogan {
+      display: flex;
+      align-items: center;
+      background: $secondary;
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      max-height: 60px;
+      cursor: pointer;
+
+      p {
+        color: $black;
+        font-size: 0.95rem;
+        line-height: 22px;
+      }
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &-pages {
+      display: flex;
+      width: 60%;
+      gap: 1rem;
+
+      @mixin pageBtn {
+        width: 45px;
+        background: transparent;
+        border-radius: 30px;
+        color: $primary;
+        font-size: 0.875rem;
+      }
+
+      button {
+        @include pageBtn;
+      }
+
+      .active {
+        @include pageBtn;
+        background: $primary !important;
+        color: #fff !important;
+      }
+    }
+
+    &-next {
+      button {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: transparent;
+        color: $primary;
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__content {
+      grid-template-columns: 1fr;
+    }
+
+    &__pagination {
+      &-pages {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../sass/colors';
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  margin-bottom: 3rem;
+  background-color: transparent;
+  height: 5rem;
+  z-index: 100;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  p {
+    color: #fff;
+  }
+
+  button {
+    background: #ffffff;
+    border-radius: 4px;
+    color: $primary;
+    font-size: 1.125rem;
+  }
+
+  .nav_links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    & {
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+  }
+}

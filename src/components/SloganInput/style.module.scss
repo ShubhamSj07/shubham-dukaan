@@ -1,0 +1,38 @@
+@import '../../sass/colors';
+
+.sloganMaker__container {
+  &__header {
+    margin-bottom: 3rem;
+
+    p {
+      font-size: 1.25rem;
+      color: $gray;
+      line-height: 28px;
+    }
+  }
+
+  &__content {
+    margin-bottom: 1rem;
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    input {
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      padding: 1rem;
+      width: 100%;
+      max-width: 350px;
+      margin-bottom: 2rem;
+    }
+  }
+
+  button {
+    background-color: $primary;
+    border-radius: 4px;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.125rem;
+  }
+}

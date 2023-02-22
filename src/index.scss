@@ -1,0 +1,55 @@
+@import './sass/colors';
+
+@font-face {
+  font-family: 'Galano-Regular';
+  src: url('./assets/fonts/galanogrotesque-regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Galano-Medium';
+  src: url('./assets/fonts/galanogrotesque-medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Galano-SemiBold';
+  src: url('./assets/fonts/galanogrotesque-semibold.otf') format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Galano-Regular';
+}
+
+body {
+  background-color: #fafafa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0.85rem 0;
+}
+
+h1 {
+  font-family: 'Galano-Medium';
+  font-size: 2.25rem;
+  color: $black;
+}
+
+h2 {
+  font-family: 'Galano-Regular';
+  font-size: 1.25rem;
+  color: $black;
+}
+
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

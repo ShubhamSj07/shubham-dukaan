@@ -1,0 +1,99 @@
+@import '../../sass/colors';
+
+.footer {
+  background: $black;
+  padding: 4rem 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+
+      &__links {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1.5rem 3rem;
+
+        p {
+          font-size: 1.125rem;
+        }
+
+        &-link {
+          display: flex;
+          flex-direction: column;
+
+          span {
+            background: #fff;
+            color: $black;
+            padding: 0.35rem 0.55rem;
+            border-radius: 50%;
+            font-size: 0.75rem;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.125rem;
+      }
+    }
+
+    hr {
+      opacity: 0.2;
+    }
+
+    &__copyrights {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        font-size: 1rem;
+        line-height: 20px;
+      }
+
+      &-flag {
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    & {
+      padding: 2rem;
+    }
+
+    &__wrapper {
+      gap: 1rem;
+
+      &__content {
+        flex-direction: column;
+
+        &__links {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.5rem 1rem;
+
+          p,
+          a {
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      &__copyrights {
+        p {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}

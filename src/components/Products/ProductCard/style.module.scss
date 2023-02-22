@@ -1,0 +1,29 @@
+@import '../.././../sass/colors';
+
+.product__card {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 1rem 0;
+
+  h3 {
+    font-family: 'Galano-Medium';
+    font-size: 1.25rem;
+    line-height: 28px;
+    color: $black;
+  }
+
+  p {
+    font-family: 'Galano-Regular';
+    font-size: 1rem;
+    line-height: 24px;
+    color: $gray;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    & {
+      max-width: 300px;
+    }
+  }
+}

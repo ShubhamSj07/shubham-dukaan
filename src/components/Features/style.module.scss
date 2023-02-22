@@ -1,0 +1,22 @@
+@import '../../sass/colors';
+
+.features__container {
+  width: 100%;
+  background: #f1f5f8;
+  padding: 1rem;
+
+  &__cards {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    place-items: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__cards {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+}
