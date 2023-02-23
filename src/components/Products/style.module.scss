@@ -3,7 +3,7 @@
 .products__container {
   width: 100%;
   background: #fff;
-  padding: 1rem;
+  padding: 2rem;
 
   &__header {
     max-width: 1200px;
@@ -21,6 +21,10 @@
   }
 
   @media screen and (max-width: 768px) {
+    & {
+      padding: 1rem;
+    }
+
     &__cards {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
